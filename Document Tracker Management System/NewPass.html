@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+	body {
+			background-color: lightblue;
+		}
+		div{
+			background-color: white;
+		}
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 90px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+	</style>
+<meta charset="utf-8">
+<title>Security Settings</title>
+</head>
+
+<body>
+
+	<h1><center>Settings</center></h1>
+	<hr color="#000000">
+<div class="sidenav">
+  <a href="Settings.html">Accounts</a>
+  <a href="GeneralSettings.html">General</a>
+  <a href="CloudSettings.html">Cloud</a>
+  <a href="SecuritySettings.html">Security</a>
+</div>
+	<div class="main">
+	<h2>Security</h2>
+		<p>Old Password<input type="password"></p>
+		<p>New Password<input type="password"></p>
+		<p>Confirm Password<input type="password"></p>
+		<form action="SecuritySettings.html" method="post">
+			<center><input type="submit" value="Confirm"></center>
+		</form>
+	</div>
+	<center>
+	<form action=".html" method="post">
+		<input type="submit" value="Back">
+		</form>
+	</center>
+</body>
+</html>
